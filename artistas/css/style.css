@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Center website */
+.container {
+	display: flex;
+	overflow-x: hidden;
+}
+
+.filters {
+	display: flex;
+}
+
+.filters .box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+@media (max-width:1440px){
+	.filters .box{
+		padding: 20px;
+	}
+}
+
+@media (max-width:768px){
+	.filters .box{
+		padding: 10px;
+	}
+}
+
+.filters .verde-1{
+	background-color: #33B85F;
+}
+
+.filters .verde-2{
+	background-color: #15AA47;
+}
+
+.filters .verde-3{
+	background-color: #0c8f38;
+}
+
+.filters .box img{
+	filter: contrast(0);
+}
+
+@media (max-width:1440px){
+	.filters .box img{
+		width: 60px;
+	}
+}
+
+@media (max-width:768px){
+	.filters .box img{
+		width: 30px;
+	}
+}
+
+.filters .box:hover,
+.filters .box:focus{
+	background-color: #145A2B;
+}
+
+.filters .box:hover img,
+.filters .box:focus img{
+	filter: contrast(1);
+}
+
+.owl-carousel .owl-stage:after {
+    content: none !important;
+    display: none !important;
+}
+
+.owl-carousel .owl-item{
+	opacity: 0 !important;
+}
+
+.owl-carousel .active{
+	opacity: 1 !important;
+}
+
+.artistas{
+	display: flex;
+	padding: 0 50px;
+	align-items: flex-end;
+	min-height: 640px;
+}
+
+@media (max-width:768px){
+	.artistas{
+		align-items: flex-start;
+		padding: 15px;
+		min-height: 0;
+	}
+}
+
+.artistas .textos{
+	display: flex;
+	flex-direction: column;
+	width: 460px;
+	padding-bottom: 90px;
+	gap: 20px;
+}
+
+@media (max-width:768px){
+	.artistas .textos{
+		width: auto;
+		padding-bottom: 0;
+		gap: 15px;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.artistas .textos h3{
+	color: #2AC05C;
+	font-family: Inter;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 187.023%; /* 59.847px */
+}
+
+.artistas .textos p{
+	color: #1E1E1E;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 187.023%; /* 33.664px */
+}
+
+@media (max-width:768px){
+	.artistas .textos h3{
+		font-size: 20px;
+		line-height: 120%;
+	}
+	
+	.artistas .textos p{
+		font-size: 14px;
+		line-height: 140%;
+	}
+}
+
+.owl-carousel .owl-item img{
+	width: auto;
+}
+
+.artistas .banner{
+	max-height: 640px;
+	margin-left: 150px;
+}
+
+@media (max-width:1440px){
+	.artistas .banner{
+		margin-left: 40px;
+	}
+}
+
+@media (max-width:768px){
+	.artistas .banner{
+		display: none;
+	}
+}
+
+.artistas .icones{
+	display: flex;
+	gap: 10px;
+}
+
+.artistas .icones a:hover{
+	transform: scale(1.1);
+	transition: all 0.2s ease;
+}
